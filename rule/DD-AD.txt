@@ -21,8 +21,8 @@
 @@||bjfesdk.douyucdn.cn^
 @@||gift.douyucdn.cn^
 #360
-@@||360.cn^
-@@down.360safe.com^
+# @@||360.cn^
+# @@down.360safe.com^
 #酷安
 @@||316.coolapk1s.com^
 @@||api.coolapk.com^
