@@ -4,19 +4,68 @@
 
 ## 🎯 ***规则订阅***
 
-> AdGuard客户端(软件、扩展)、AdBlock、AdBlockPlus、uBlock Origin 推荐使用：`all.txt`</br>
+> AdGuard客户端(软件、扩展)、AdBlock、AdBlockPlus、uBlock Origin 推荐使用：`easylist`</br>
 > AdGuardHome 推荐使用：`dns.txt`</br>
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
-| 名称         | 说明                                                                                        |                                         Github                                         |                                 jsdelivr                                  |
-| ------------ | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| `all.txt`    | 去重的规则合集，包含`DOMAIN`、`REGEX`、`MODIFY`、`HOSTS`，适用于 `AdGuard`、`AdBlock`等     |      [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/all.txt)       |  [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//all.txt)   |
-| `dns.txt`    | 包含 `DOMAIN`、`REGEX`、`HOSTS`规则，适用于`AdGuardHome` 等基于 DNS 的过滤工具              |      [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/dns.txt)       |  [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//dns.txt)   |
-| `domain.txt` | `DOMAIN` 域名规则，仅完整域名                                                               | [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt) | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//domain.txt) |
-| `hosts.txt`  | `HOSTS` 规则，适用于几乎所有设备                                                            |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/hosts.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//hosts.txt)  |
-| `modify.txt` | `MODIFY` 修饰规则，添加了一些修饰符号的规则，AdG 支持, `modify.txt` + `dns.txt` = `all.txt` |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/modify.txt)     | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//modify.txt) |
-| `DD-AD.txt`  | 由本仓库维护的私有规则，主要是对上游规则的补充                                              |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//DD-AD.txt)  |
-| `regex.txt`  | `REGEX` 正则规则，包含正则的域名规则，AdGH 支持                                             |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/regex.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//regex.txt)  |
+| 文件              | 说明                          |        github        |         ghproxy         |         jsdelivr           |
+|-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
+| `easylist.txt`  | 完整主规则                       | [订阅][easylist-raw] | [订阅][easylist-ghproxy] | [订阅][easylist-jsdelivr] |
+| `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [订阅][modify-raw]  |  [订阅][modify-ghproxy]  |  [订阅][modify-jsdelivr]  |
+| `dns.txt`       | 仅含 DNS 过滤规则的 `easylist.txt` |   [订阅][dns-raw]    |   [订阅][dns-ghproxy]    |   [订阅][dns-jsdelivr]    |
+| `dnsmasq.conf`  | dnsmasq 及其衍生版本              | [订阅][dnsmasq-raw]  | [订阅][dnsmasq-ghproxy]  | [订阅][dnsmasq-jsdelivr]  |
+| `clash.yaml`    | clash 及其衍生版本                |  [订阅][clash-raw]   |  [订阅][clash-ghproxy]   |  [订阅][clash-jsdelivr]   |
+| `smartdns.conf` | smartdns                    | [订阅][smartdns-raw] | [订阅][smartdns-ghproxy] | [订阅][smartdns-jsdelivr] |
+| `hosts`         | 几乎所有操作系统原生支持                |  [订阅][hosts-raw]   |  [订阅][hosts-ghproxy]   |  [订阅][hosts-jsdelivr]   |
+| `DD-AD.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [订阅][DD-AD-raw]  | [订阅][DD-AD-ghproxy]  | [订阅][DD-AD-jsdelivr]  |
+
+[easylist-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt
+
+[easylist-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt
+
+[easylist-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/easylist.txt
+
+[modify-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/modify.txt
+
+[modify-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/modify.txt
+
+[modify-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/modify.txt
+
+[dns-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/dns.txt
+
+[dns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/dns.txt
+
+[dns-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/dns.txt
+
+[dnsmasq-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/dnsmasq.conf
+
+[dnsmasq-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/dnsmasq.conf
+
+[dnsmasq-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/dnsmasq.conf
+
+[clash-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/clash.yaml
+
+[clash-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/clash.yaml
+
+[clash-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/clash.yaml
+
+[smartdns-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/smartdns.conf
+
+[smartdns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/smartdns.conf
+
+[smartdns-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/smartdns.conf
+
+[hosts-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/hosts
+
+[hosts-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/hosts
+
+[hosts-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/hosts
+
+[DD-AD-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt
+
+[DD-AD-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt
+
+[DD-AD-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/DD-AD.txt
 
 ### 说明
 
@@ -27,7 +76,3 @@
 2.**针对七猫小说广告添加了规则**
 
 3.**私人dns：dd.afwfv.cn**
-
-#### 访问次数
-
-![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
